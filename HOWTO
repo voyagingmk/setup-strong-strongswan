@@ -1,0 +1,10 @@
+vi /etc/resolv.conf
+nameserver 8.8.8.8
+nameserver 8.8.4.4
+
+apt update
+apt install pacapt git -y
+git clone https://github.com/voyagingmk/setup-strong-strongswan.git
+cd setup-strong-strongswan/
+chmod +x setup.sh
+./setup.sh 
