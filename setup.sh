@@ -19,7 +19,7 @@ fi
 # Variables
 
 [ -z "$STRONGSWAN_TMP" ] && STRONGSWAN_TMP="/tmp/strongswan"
-[ -z "$STRONGSWAN_VERSION" ] && STRONGSWAN_VERSION="5.5.1"
+[ -z "$STRONGSWAN_VERSION" ] && STRONGSWAN_VERSION="5.8.2"
 [ -z "$KEYSIZE" ] && KEYSIZE=16
 #STRONGSWAN_USER
 #STRONGSWAN_PASSWORD
@@ -235,7 +235,7 @@ bigEcho "Installing necessary dependencies"
 call pacapt -Sy --noconfirm
 checkForError
 
-call pacapt -S --noconfirm -- make g++ gcc iptables xl2tpd libssl-dev module-init-tools curl openssl-devel
+call pacapt -S --noconfirm -- make g++ gcc iptables xl2tpd libssl-dev module-init-tools curl 
 checkForError
 
 #################################################################
