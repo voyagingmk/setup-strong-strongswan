@@ -10,7 +10,13 @@ git clone https://github.com/voyagingmk/setup-strong-strongswan.git
 cd setup-strong-strongswan/
 chmod +x setup.sh
 ./setup.sh
+Note：change username and password interactively
 
 vi /etc/ipsec.secrets
 remove line: 
   xxxx : XAUTH "xxxxxxxx"
+
+config vpn on iPhone:
+
+log path:
+/var/log/syslog
